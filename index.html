@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tlokotse Mogudi - Full-Stack Developer</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@iconscout/unicons@4.0.8/css/line.min.css">
+    </head>
+    <body>
+        <div class="container">
+            <nav class="header">
+                <div class="nav-logo">
+                    <p class="nav-name">TM</p>
+                </div>
+                <div class="nav-menu" id="myNavMenu">
+                    <ul class="nav-menu-list">
+                        <li class="nav-list">
+                            <a href="#home" class="nav-link active-link">HOME</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav-list">
+                            <a href="#about" class="nav-link">ABOUT</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav-list">
+                            <a href="#projects" class="nav-link">PROJECTS</a>
+                            <div class="circle"></div>
+                        </li>
+                        <li class="nav-list">
+                            <a href="#contact" class="nav-link">CONTACT</a>
+                            <div class="circle"></div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="mode">
+                    <div class="moon-sun" id="toggle-switch">
+                        <i class="fa fa-moon" id="moon"></i>
+                        <i class="fa fa-sun" id="sun"></i>
+                    </div>                    
+                </div>
+                <div class="nav-menu-button">
+                    <i class="uil uil-bars" onclick="myMenuFunction()"></i>
+                </div>
+            </nav>
+
+            <main class="wrapper">
+                <section class="featured-box" id="home">
+                    <div class="featured-text">
+                        <div class="hello">
+                            <p>Hello I'm</p>
+                        </div>
+                        <div class="featured-name">
+                            <span>Tlokotse Mogudi</span>
+                        </div>
+                        <div class="featured-title">
+                            <span class="typed-text"></span>
+                        </div>
+                        <div class="text-info">
+                            <p>Full-stack developer and data analyst with a diploma in Software Development. Passionate about creating efficient solutions and extracting meaningful insights from data.</p>
+                        </div>
+                        <div class="text-button">
+                            <button class="btn hire-btn">Hire me</button>
+                            <button class="btn" onclick="window.open('cv.pdf')">Download CV <i class="uil uil-file"></i></button>
+                        </div>
+                        <div class="social_icons">
+                            <div class="icon-circle"></div>
+                            <div class="icon"><i class="uil uil-instagram"></i></div>
+                            <div class="icon"><i class="uil uil-linkedin-alt"></i></div>
+                            <div class="icon"><i class="uil uil-github-alt"></i></div>
+                        </div>
+                    </div>  
+                    <div class="featured-image">
+                        <div class="image">
+                            <img src="pics/cover.jpg" alt="Tlokotse Mogudi">
+                        </div>
+                    </div>                 
+                </section>
+
+                <section class="section" id="about">
+                    <div class="top-headder">
+                        <h1>ABOUT ME</h1>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="about-info">
+                                <figure class="about-me">
+                                    <figcaption>
+                                        <img src="pics/profilePic.jpeg" alt="Tlokotse Mogudi Profile" class="profile"/>
+                                        <h2>FULL-STACK DEVELOPER</h2>
+                                        <p>A highly motivated IT graduate with a Diploma in Software Development from Tshwane University of Technology. Proficient in Python, Java, JavaScript, SQL, and data analysis tools.</p>
+                                        
+                                        <div class="education">
+                                            <h3>Education</h3>
+                                            <div class="education-item">
+                                                <h4>Tshwane University of Technology</h4>
+                                                <p class="education-date">2019-2023</p>
+                                                <p class="education-degree">Diploma in Information Technology (Software Development)</p>
+                                                <ul class="education-details">
+                                                    <li>Developed software applications using Python, Java, and SQL</li>
+                                                    <li>Designed full-stack web applications</li>
+                                                    <li>Applied containerization with Docker</li>
+                                                    <li>Analyzed datasets using Python and Power BI</li>
+                                                    <li>Automated reporting processes and extracted insights</li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </figcaption>
+                                </figure>
+                                <button class="about-me-btn" onclick="window.open('cv.pdf')">Download CV</button>                    
+                            </div>
+                        </div>
+                        <div class="skills">
+                            <div class="skills-box">
+                                <span class="title">Python</span>
+                                <div class="skills-bar Python">
+                                    <span class="skills-per">
+                                        <span class="tooltip">85%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skills-box">
+                                <span class="title">Java</span>
+                                <div class="skills-bar JAVA">
+                                    <span class="skills-per">
+                                        <span class="tooltip">80%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skills-box">
+                                <span class="title">JavaScript</span>
+                                <div class="skills-bar javascript">
+                                    <span class="skills-per">
+                                        <span class="tooltip">75%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skills-box">
+                                <span class="title">SQL</span>
+                                <div class="skills-bar SQL">
+                                    <span class="skills-per">
+                                        <span class="tooltip">82%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skills-box">
+                                <span class="title">Power BI</span>
+                                <div class="skills-bar powerbi">
+                                    <span class="skills-per">
+                                        <span class="tooltip">78%</span>
+                                    </span>
+                                </div>
+                            </div>
+                            <div class="skills-box">
+                                <span class="title">Docker</span>
+                                <div class="skills-bar docker">
+                                    <span class="skills-per">
+                                        <span class="tooltip">70%</span>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="projects">
+                    <div class="top-headder">
+                        <h1>PROJECTS & EXPERIENCE</h1>
+                    </div>
+                    <div class="project-container">
+                        <div class="project-box">
+                            <i class="uil uil-graduation-cap"></i>
+                            <h3>Academic Projects</h3>
+                            <label>Software development, data analysis, and full-stack web applications</label>
+                        </div>
+                        <div class="project-box">
+                            <i class="uil uil-brackets-curly"></i>
+                            <h3>Technologies</h3>
+                            <label>Python, Java, JavaScript, SQL, Docker, Git</label>
+                        </div>
+                        <div class="project-box">
+                            <i class="uil uil-chart-bar"></i>
+                            <h3>Data Analysis</h3>
+                            <label>Power BI, Excel, Python for data insights</label>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="section" id="contact">
+                    <div class="top-headder">
+                        <h1>LET'S WORK TOGETHER</h1>
+                        <span>Do you have a project in mind? Contact me here</span>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="contact-info">
+                                <h2>FIND ME <i class="uil uil-corner-right-down"></i></h2>
+                                <p><i class="uil uil-envelope"></i> tlokotsemogudi@gmail.com</p>
+                                <p><i class="uil uil-phone"></i> 064 976 7622</p>
+                                <p><i class="uil uil-map-marker"></i> Pretoria, South Africa</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="form-control">
+                                <div class="form-inputs">
+                                    <input type="text" class="input-field" placeholder="Your name" required>
+                                    <input type="email" class="input-field" placeholder="Your email" required>
+                                </div>
+                                <div class="textarea">
+                                    <input type="text" class="input-subject" placeholder="Subject" required>
+                                    <textarea placeholder="Your message" required></textarea>
+                                </div>
+                                <div class="form-button">
+                                    <button class="btn">Send <i class="uil uil-message"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </main>
+
+            <footer>
+                <div class="middle-footer">
+                    <ul class="footer-menu">
+                        <li class="footer_menu_list">
+                            <a href="#home">HOME</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#about">ABOUT</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#projects">PROJECTS</a>
+                        </li>
+                        <li class="footer_menu_list">
+                            <a href="#contact">CONTACT</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer-social-icons">
+                    <div class="footer-social-icon-circle"></div>
+                    <div class="icon"><a href="#"><i class="uil uil-instagram"></i></a></div>
+                    <div class="icon"><a href="#"><i class="uil uil-linkedin-alt"></i></a></div>
+                    <div class="icon"><a href="#"><i class="uil uil-github-alt"></i></a></div>                    
+                </div>
+                <div class="bottom-footer">
+                    <p>Copyright &copy; <a href="#home" style="text-decoration: none;">Tlokotse Mogudi</a> - All rights reserved <script>document.write(new Date().getFullYear())</script></p>
+                </div>
+            </footer>
+        </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollReveal.js/4.0.9/scrollreveal.min.js"></script>
+        <script src="script.js"></script>
+    </body>
+</html>
