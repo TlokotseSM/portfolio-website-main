@@ -1142,4 +1142,45 @@ footer {
         width: 100%;
         text-align: center;
     }
+    /* (Previous CSS remains exactly the same until the .btn styles) */
+
+/* Update button styles for download links */
+.btn[download] {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+}
+
+/* Add this new rule for the about section CV button */
+.about-info .about-me-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 15px;
+    padding: 12px 25px;
+    cursor: pointer;
+    border-radius: 20px;
+    background: #0B60B0;
+    color: #E2E2B6;
+    margin-top: 20px;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border: none;
+}
+
+.about-info .about-me-btn:hover {
+    background: #03346E;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Add pointer-events for circles */
+.icon-circle,
+.footer-social-icon-circle {
+    pointer-events: none;
+}
+
+/* (Rest of your existing CSS remains exactly the same) */
 }
