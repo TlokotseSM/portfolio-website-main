@@ -291,7 +291,7 @@ i {
     align-items: center;
 }
 
-.icon-circle {
+/* .icon-circle {
     position: absolute;
     transform: transform(-50%, -50%);
     width: 40px;
@@ -301,7 +301,7 @@ i {
 }
 .footer-social-icon-circle {
     pointer-events: none;
-}
+} */
 
 @keyframes iconSlide {
     25% {
@@ -1184,3 +1184,196 @@ footer {
 
 /* (Rest of your existing CSS remains exactly the same) */
 }
+
+/* rmb */
+/* Updated Project Box Styles */
+.project-box {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 30%;
+    height: 250px;
+    border: 2px solid #0B60B0;
+    border-radius: 20px;
+    box-shadow: 1px 8px 10px 2px var(--first-shadow);
+    overflow: hidden;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    padding: 20px;
+    text-align: center;
+    color: #F0EDCF;
+    z-index: 1;
+}
+
+.project-box h3 {
+    color: #F0EDCF;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.project-box label {
+    font-size: 15px;
+    color: #F0EDCF;
+    line-height: 1.5;
+    transition: all 0.3s ease;
+    z-index: 2;
+}
+
+.project-box::after {
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    background: var(--hover-color);
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+    z-index: -1;
+}
+
+.project-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 15px 30px rgba(0,0,0,0.3);
+}
+
+.project-box:hover.project-box::after {
+    bottom: 0;
+}
+
+/* Responsive adjustments for project boxes */
+@media only screen and (max-width: 1024px) {
+    .project-box {
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .project-box {
+        width: 100%;
+    }
+}
+
+.project-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    color: inherit;
+    text-decoration: none;
+    padding: 20px; /* matches your project box padding */
+}
+
+.project-link:hover h3 {
+    text-decoration: underline; /* visual feedback on hover */
+}
+
+/* Add these new styles to your existing CSS */
+
+/* Section divider */
+.section-divider {
+    height: 1px;
+    background: #0B60B0;
+    margin: 25px 0;
+    opacity: 0.3;
+}
+
+/* Experience and Education sections */
+.experience-section, .education-section {
+    margin-bottom: 30px;
+}
+
+.experience-section h3, .education-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    border-bottom: 2px solid #0B60B0;
+    padding-bottom: 10px;
+}
+
+/* Skills section improvements */
+.skills-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    border-bottom: 2px solid #0B60B0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skills-column {
+    flex: 1;
+}
+
+/* Social icons - add Twitter/X */
+.social_icons .icon:nth-child(4) i {
+    font-size: 18px; /* Slightly larger for X icon */
+}
+
+/* [Rest of your existing CSS remains the same] */
+
+/* [Previous CSS remains the same until the skills section] */
+
+/* Skills section improvements */
+.skills-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    border-bottom: 2px solid #0B60B0;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.skills-container {
+    display: flex;
+    gap: 20px;
+}
+
+.skills-column {
+    flex: 1;
+}
+
+/* New skill bars */
+.html-css .skills-per {
+    animation-delay: 0.4s;
+    width: 90%;
+}
+
+.php .skills-per {
+    animation-delay: 0.7s;
+    width: 78%;
+}
+
+/* Section divider */
+.section-divider {
+    height: 1px;
+    background: #0B60B0;
+    margin: 25px 0;
+    opacity: 0.3;
+}
+
+/* Experience and Education sections */
+.experience-section, .education-section {
+    margin-bottom: 30px;
+}
+
+.experience-section h3, .education-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: var(--text-color);
+    border-bottom: 2px solid #0B60B0;
+    padding-bottom: 10px;
+}
+
+/* Twitter/X icon styling */
+.fa-x-twitter {
+    font-size: 18px;
+}
+
+/* [Rest of your existing CSS remains the same] */
