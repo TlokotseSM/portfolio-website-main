@@ -44,6 +44,7 @@ document.querySelectorAll('[download]').forEach(link => {
 });
 
 // Active link highlighting
+// Update the active link highlighting to include new sections
 const sections = document.querySelectorAll('section');
 const navLinks = document.querySelectorAll('.nav-link');
 
@@ -118,3 +119,28 @@ if (hireBtn) {
         });
     });
 }
+
+//
+// Update the navigation menu to include new sections
+const navMenuList = document.querySelector('.nav-menu-list');
+if (navMenuList) {
+    const experienceLink = document.createElement('li');
+    experienceLink.className = 'nav-list';
+    experienceLink.innerHTML = `
+        <a href="#experience" class="nav-link">EXPERIENCE</a>
+        <div class="circle"></div>
+    `;
+    
+    const educationLink = document.createElement('li');
+    educationLink.className = 'nav-list';
+    educationLink.innerHTML = `
+        <a href="#education" class="nav-link">EDUCATION</a>
+        <div class="circle"></div>
+    `;
+    
+    // Insert after the about link
+    const aboutLink = document.querySelector('a[href="#about"]').parentNode;
+    aboutLink.parentNode.insertBefore(experienceLink, aboutLink.nextSibling);
+    experienceLink.parentNode.insertBefore(educationLink, experienceLink.nextSibling);
+}
+
